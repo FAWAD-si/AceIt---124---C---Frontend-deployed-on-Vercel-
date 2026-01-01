@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 AceIT – Entry test  Preparation Platform
 
-## Getting Started
+**AceIT** is a cutting-edge, frontend-integrated examination and preparation platform. It provides a robust environment for students to master core subjects and for administrators to build comprehensive test banks. Designed for the 2026 academic standards, it features a high-end "White & Blue" aesthetic, bento-style layouts, and a zero-latency user experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Subject Mastery**: Specialized modules for Physics, Chemistry, Biology, and English.
+- **Bento-Style UI**: Modern, clean, and intuitive dashboard design.
+- **Exam Simulation**: Real-world test-taking interface with timer and status tracking.
+- **Admin Command Center**: Advanced tools for bulk question management and test analytics.
+- **Security-First**: Dedicated 401/403 error handling and OTP verification flows.
+- **Vercel Optimized**: Purpose-built for high-speed deployment with mock data persistence.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS (Utility-first CSS)
+- **Icons**: Lucide React
+- **Form Handling**: React Hook Form
+- **Notifications**: React Toastify
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📍 Platform Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🌐 Public & Global
+- `/` – High-Impact Landing Page
+- `/unauthorized` – 401 Session Expired Page
+- `/forbidden` – 403 Permission Denied Page
 
-## Deploy on Vercel
+### 🔑 Authentication
+- `/auth/login` – Secure Portal Access
+- `/auth/register` – Student/Admin Signup
+- `/auth/verify-otp` – Email Verification Interface
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👨‍🎓 Student Experience
+- `/student` – Main Prep Dashboard (Test Selection)
+- `/student/attempt/[testId]` – Live Exam/Practice Interface
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🛠️ Admin Management
+- `/admin/dashboard` – Global Stats & Control Panel
+- `/admin/all-tests` – Exam Bank Overview
+- `/admin/create-test` – Test Initialization Tool
+- `/admin/manage-questions` – Central Management Hub
+- `/admin/view-questions/[testId]` – Detailed Question Review
+- `/admin/add-question/[testId]` – Single Entry Tool
+- `/admin/add-multiple-questions/[testId]` – Bulk CSV/JSON Simulation
+- `/admin/questions/edit/[questionId]` – Content Refinement Editor
+- `/admin/flagged-questions` – Quality Control & Flag Review
+
+---
+
+## 📚 Preparation Modules
+
+The platform is optimized for the following academic domains:
+* **Physics**: From Quantum Mechanics to Thermodynamics.
+* **Chemistry**: Organic, Inorganic, and Physical Chemistry banks.
+* **Biology**: Cell Structure, Genetics, and Physiology MCQs.
+* **English**: Grammar, Vocabulary, and Comprehensive Literature.
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the Repo**: `git clone <your-repo-link>`
+2. **Install Dependencies**: `npm install`
+3. **Run Locally**: `npm run dev`
+4. **Deploy**: Push to GitHub and connect to Vercel for instant live hosting.
