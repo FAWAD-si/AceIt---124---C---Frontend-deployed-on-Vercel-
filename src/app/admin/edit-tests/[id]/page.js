@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams, useRouter } from "next/navigation";
-import Input from "../../../../components/Input"; 
+import Input from "../../../components/Input"; 
 import Button from "../../../components/Button";
 import { toast } from "react-toastify";
-import ModalComponent from "../../../../components/Modal";
+import ModalComponent from "../../../components/Modal";
 
 const EditTest = () => {
   const params = useParams();
